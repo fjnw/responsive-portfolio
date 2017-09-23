@@ -1,0 +1,295 @@
+
+body {
+	background-image: url(http://www.lebensbratpfanne.bplaced.net/assets/image/paper-texture.png);
+	margin: 0 auto;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+p {
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 15px;
+}
+h2 {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	color: #4aaaa5;
+	text-align: left;
+	margin-left: 30px;
+}
+hr { 
+	margin: 30px 30px;
+		border-style: solid;
+	   	border-width: 1px;
+		border-color: grey;
+}
+/*-------------------------------------*/	
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+/*-------------------------------------*/	
+header {
+	background: #ffffff;
+	width: 100%;
+	margin: 0 auto;
+	border-bottom: 2px solid #cccccc;
+}
+	header h1 {
+		background: #4aaaa5;
+		color: #ffffff;
+		font-family: 'Georgia', Times, 'Times New Roman', serif;
+		letter-spacing: 2px;
+		display: inline-block;
+		margin: 0 auto;
+		padding: 20px;
+}
+	nav {
+		display: inline-block;
+		text-decoration: none;
+		margin: 0 0 0 320px;
+}
+		nav ul li {
+			list-style: none;
+			display: inline-block;
+			cursor: pointer;
+			padding: 5px 20px;
+			margin: 5px 5px;
+			border: 2px solid #4aaaa5;
+			border-radius: 100px;
+
+}
+		nav ul li:hover {
+			background: rgba(74, 170, 165, .30);
+}
+			nav ul li a {
+				text-decoration: none;
+				color: grey;
+				font-family: arial;
+				font-size: 14px;
+}
+/*-------------------------------------*/	
+.mid-container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 50px 0 150px 0;
+}
+/*-------------------------------------*/	
+section, aside {
+		display: inline-block;
+		vertical-align: top;
+		background: #ffffff;
+		margin: 0 auto;
+		border: 2px solid #dddddd;
+}
+/*-------------------------------------*/	
+.about, .portfolio, .contact {
+	width: 650px;
+	padding: 0 0 30px 0;
+	margin: 0 20px 50px 0;
+}
+/*-------------------------------------*/
+	.about p {
+		margin: 0 30px;
+}
+	.about img {
+		float: left;
+		width: 300px;
+		margin: 0 20px 10px 30px;
+}
+/*-------------------------------------*/
+.portfolio {
+	text-align: center;
+}
+	.portfolio img {
+		vertical-align: top;
+		width: 280px;
+}
+.portfolio-media {
+	display: inline-block;
+	padding: 2%;
+}
+.portfolio-media p {
+	color: white;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+	.portfolio-text {
+		background: rgba(74, 170, 165, .75);
+		position: relative;
+		top: 180px;
+		padding: .5px 0 .5px 0;
+		margin: -50px 0 0 0;
+	}
+/*-------------------------------------*/
+form {
+	margin: 0 0 0 30px;
+}
+label, input {
+	font: 20px arial;
+	color: grey;
+}
+	input[name="name"], [name="email"], [name="comments"]{
+		width: 90%;
+		margin: 10px 0 40px 0;
+		padding: 5px 10px;
+}
+	input[type="submit"] {
+		border: 1.5px solid #4aaaa5;
+		padding: 4px 20px;
+		background: rgba(74, 170, 165, .30);
+		cursor: pointer;
+}
+/*-------------------------------------*/	
+aside {
+	text-align: center;
+	min-width: 250px;
+	width: 270px;
+	padding: 0 0 40px 0;
+}
+	aside img {
+		width: 50px;
+		margin: 25px 10px 0 10px;
+}
+	aside hr {
+		margin: 0 30px 0 30px;
+		margin-bottom: 10px;
+}
+/*-------------------------------------*/	
+footer {
+	clear: both;	
+	background: grey;
+	width: 100%;
+	text-align: center;
+	padding: 25px;
+	border-top: 8px solid #4aaaa5;
+	font: 12px arial;
+	color: #D3D3D3;
+	position: fixed;
+	bottom: 0;
+}
+
+
+
+
+
+
+/************* MEDIA QUERIES ********************/
+
+/*--------------- MONITOR (FOOTER: GREY)----------------------*/
+@media screen and (max-width: 980px) {
+	.container {
+		width: 100%;
+}	
+	h1 {
+	margin: 0 0 0 30px; 
+}
+	nav {
+	float: right;
+	margin: 0 30px 0 0;
+}
+	.mid-container {
+		margin: 0 30px;
+}
+	.mid-container, .about, .portfolio, .contact, aside {
+		width: 96%;
+}
+		.portfolio img {
+			vertical-align: top;
+			width: 310px;
+}
+	aside img {
+		width: 80px;
+		margin: 40px 30px 0 30px;
+}
+	footer {
+		background: yellow;
+		width: 100%;
+}
+}
+
+/*--------------- TABLET (FOOTER: YELLOW)----------------------*/
+
+@media screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+}	
+	h1 {
+	margin: 0 0 0 0px; 
+}
+	nav {
+	float: right;
+	margin: 0 20px 0 0;
+}
+	.mid-container {
+		margin: 0 30px;
+}
+	.mid-container, .about, .portfolio, .contact, aside {
+		width: 96%;
+}
+		.portfolio img {
+			vertical-align: top;
+			width: 260px;
+}
+	aside img {
+		width: 80px;
+		margin: 40px 30px 0 30px;
+}
+	footer {
+		background: orange;
+		width: 100%;
+}
+}
+
+/*--------------- MOBILE (FOOTER: RED)--------------------*/
+
+@media screen and (max-width: 640px) {
+	.container {
+		width: 100%;
+}	
+	header h1 {
+		padding: 45px 30px;
+}
+	nav {
+		display: normal;
+		float: right;
+		margin: 0 50px 0 0;
+}
+		nav ul li {
+			list-style: none;
+			display: flex;
+			margin: 6px 0;
+}
+	.mid-container {
+		margin: 0;
+}
+	.mid-container, .about, .portfolio, .contact, aside {
+		width: 100%;
+}
+		.about img {
+			float: none;
+			width: 400px;
+			margin: 10px 20px 30px 30px;
+}
+		.portfolio img {
+			vertical-align: top;
+			width: 400px;
+}
+	aside img {
+		width: 80px;
+		margin: 40px 20px 0 20px;
+}
+	footer {
+		background: red;
+		width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
